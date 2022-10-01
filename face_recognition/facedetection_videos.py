@@ -1,7 +1,7 @@
 import face_recognition
 import cv2
 
-# Since some of the codes are the same, all the details are written in the face_recognition.py file.
+# Since some of the codes are the same, all the details are written in the facedetection.py file.
 
 path = "videos/testvideo.mp4"
 cap = cv2.VideoCapture(path)
