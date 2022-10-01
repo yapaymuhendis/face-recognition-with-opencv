@@ -1,6 +1,8 @@
 import face_recognition
 import cv2
 
+# Since some of the codes are the same, all the details are written in the facedetection.py file.
+
 cap = cv2.VideoCapture(0)
 color = (0,255,0)
 
