@@ -1,7 +1,9 @@
 import face_recognition
 import cv2
 
-path = "/Users/42cagan/Desktop/face_recognition/videos/testvideo.mp4"
+# Since some of the codes are the same, all the details are written in the face_recognition.py file.
+
+path = "videos/testvideo.mp4"
 cap = cv2.VideoCapture(path)
 color = (0,255,0)
 
@@ -21,7 +23,6 @@ while True:
 
     cv2.imshow("test", frame)
 
-    # q'ya bastığımda pencereyi kapat diyorum.
     if cv2.waitKey(1) & 0xFF == ord("q"):
         break
 
