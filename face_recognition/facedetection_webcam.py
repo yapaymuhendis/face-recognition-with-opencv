@@ -18,15 +18,16 @@ while True:
         pt1 = (topleftX,topleftY)
         pt2 = (bottomrightX,bottomrightY)
 
-        cv2.putText(frame, text='cagan', org=(topleftX,topleftY),
+        cv2.putText(frame, text='test', org=(topleftX,topleftY),
             fontFace= cv2.FONT_HERSHEY_SIMPLEX, fontScale=1, color=(255,185,15),
             thickness=1, lineType=cv2.LINE_AA)
+        # The cv2.PutText() function allows us to write text where we choose.
 
         cv2.rectangle(frame, pt1, pt2, color)
 
     cv2.imshow("test", frame)
 
-    # q'ya bastığımda pencereyi kapat diyorum.
+    
     if cv2.waitKey(1) & 0xFF == ord("q"):
         break
 
